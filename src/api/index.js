@@ -23,6 +23,11 @@ app.use(
 );
 
 app.use("/api/auth", authRoutes);
+app.use("/", ()=>{
+  console.log("hi i am route");
+  
+});
+
 app.use("/api/messages", messageRoutes);
 
 // Serverless handler export
