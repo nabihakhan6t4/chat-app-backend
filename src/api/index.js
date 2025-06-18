@@ -6,6 +6,4 @@ import { initSocket } from "../lib/socket.js";
 const server = http.createServer(app);
 initSocket(server);
 
-server.listen(3000, () => {
-  console.log("🚀 Server is running on http://localhost:3000");
-});
+
